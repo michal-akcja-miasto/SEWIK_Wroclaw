@@ -296,5 +296,20 @@ navbarPage(
         uiOutput("wizualizacja_output")
       )
     )
+  ),
+  
+  tabPanel(
+    title = div(HTML('<i class="fa fa-info-circle" role="presentation" aria-label="info-circle icon"></i>'),
+                "Sfinansowano z PROO"),
+    div(
+      img(src = "niw.png", width = "150px"),
+      img(src = "am.png", width = "150px"),
+      img(src = "proo.png", width = "150px")
+    ),
+    div(style = "max-width: 450px",
+      p(
+        "Sfinansowano przez Narodowy Instytut Wolności – Centrum Rozwoju Społeczeństwa Obywatelskiego ze środków Programu Rozwoju Organizacji Obywatelskich na lata 2018 – 2030."
+      )
+    )
   )
 )
