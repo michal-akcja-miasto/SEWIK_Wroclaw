@@ -260,7 +260,13 @@ navbarPage(
   ),
   
   tabPanel(
-    "Wykresy/raporty",
+    #hack to get link in navbar https://stackoverflow.com/questions/26547589/insert-a-link-into-the-navbar-in-shiny
+    title = HTML('Wykresy/raporty
+                  </a></li><li>
+                  <a href="https://github.com/michal-akcja-miasto/SEWIK_Wroclaw" target = "_blank">
+                  <i class="fab fa-github" role="presentation" aria-label="github icon"></i>
+                  GitHub
+                  </a>'),
     sidebarLayout(
       sidebarPanel = sidebarPanel(
         p(icon("info-circle"), HTML("Filtry danych wybierz w zakładce z mapą.<br> 
